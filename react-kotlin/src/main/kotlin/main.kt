@@ -1,6 +1,6 @@
 import kotlin.browser.document
-import React.createElement
+import ReactDSL.e
 
 fun main() {
-  ReactDOM.render(createElement(CustomComponent::class.js, null), document.getElementById("root"))
+  ReactDOM.render(e(CustomComponent::class.js){}, document.getElementById("root"))
 }

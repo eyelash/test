@@ -1,4 +1,4 @@
-import React.createElement
+import ReactDSL.e
 
 class CustomComponentState(val count: Int) {}
 
@@ -12,12 +12,8 @@ class CustomComponent(props: Any): React.Component<Any, CustomComponentState>(pr
   }
 
   override fun render(): dynamic {
-    return createElement(
-      "button",
-      object {
-        @JsName("onClick")
-        val onClick = this@CustomComponent::handleClick
-      },
-      "CLICK ME (", state.count, ")")
+    return e("button", "onClick" to this::handleClick) {
+      text("CLICK ME (", state.count, ")")
+    }
   }
 }

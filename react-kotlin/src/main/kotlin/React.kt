@@ -10,4 +10,4 @@ external open class Component<P, S>(props: P) {
   fun setState(state: S)
 }
 
-external fun <P> createElement(type: dynamic, props: P?, vararg children: dynamic): dynamic
+external fun createElement(type: dynamic, props: Any?, vararg children: dynamic): dynamic
