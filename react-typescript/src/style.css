@@ -1,0 +1,17 @@
+button {
+  padding: 10px 20px;
+  background-color: #EEE;
+  border: 1px solid #999;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px #CCC;
+  transition: box-shadow 200ms;
+}
+
+button:hover {
+  border-color: #666;
+  box-shadow: 0 2px 10px #999;
+}
+
+button:active {
+  background-color: #DDD;
+}
